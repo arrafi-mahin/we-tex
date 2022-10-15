@@ -1,0 +1,27 @@
+#topBar {
+  background-color: #0b2b43;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#topBar i {
+  padding: 0 10px;
+}
+
+#topBar .address-top {
+  padding-right: 20px;
+}
+
+#topBar .social-links {
+  background-color: white;
+}
+
+#topBar .social-links i {
+  color: #ededed;
+}
+
+#topBar a {
+  text-decoration: none !important;
+}
+/*# sourceMappingURL=style.css.map */

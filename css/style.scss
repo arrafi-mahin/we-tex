@@ -1,0 +1,21 @@
+#topBar {
+  background-color: #0b2b43;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  i {
+    padding: 0 10px;
+  }
+  .address-top {
+    padding-right: 20px;
+  }
+  .social-links {
+    background-color: white;
+    i {
+      color: #ededed;
+    }
+  }
+  a {
+    text-decoration: none !important;
+  }
+}
