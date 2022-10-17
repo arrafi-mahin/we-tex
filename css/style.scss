@@ -250,16 +250,29 @@
   }
 }
 #services {
+  background-color: #ecf0f3;
   margin-top: 10vh;
   .subtitle {
     font-size: 20px;
     color: rgb(19, 19, 19);
     padding-bottom: 2px;
-    text-shadow: 0px 0px 5px rgba(63, 107, 169, 0.5);
+    // text-shadow: 0px 0px 5px rgba(63, 107, 169, 0.5);
   }
   .title {
+    font-size: 34px;
+    font-weight: 600;
     color: rgb(22, 22, 22);
     margin: 5px 0;
-    text-shadow: 0px 0px 5px rgba(63, 107, 169, 0.5);
+    // text-shadow: 0px 0px 5px rgba(63, 107, 169, 0.5);
   }
+  .btn-services {
+    color: white;
+    background-color: #7fc6a4;
+    border: 1px solid white;
+    padding: 5px 20px;
+    margin-top: 10px;
+  }
+}
+.elementor-shape-fill {
+  fill: white !important;
 }
