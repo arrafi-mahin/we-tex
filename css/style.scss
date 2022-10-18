@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+}
 @media (max-width: 768px) {
   .swiper-container {
     height: 60vh !important;
@@ -25,7 +30,8 @@
     background-color: #0b2b43;
     color: white;
     font-size: 14px;
-    font-weight: 600;
+    font-family: "Roboto";
+    font-weight: 700;
     i {
       padding: 0 10px;
     }
@@ -53,6 +59,7 @@
     }
   }
   .navbar {
+    font-family: "Roboto";
     .navbar-brand {
       .brand-title {
         font-size: 30px;
@@ -169,6 +176,10 @@
   }
   .card-2 {
     background-color: #7fc6a4;
+    .count {
+      font-size: 70px;
+      font-weight: 700;
+    }
   }
 }
 #about-us {
@@ -208,6 +219,12 @@
   max-width: 120px;
   border-bottom: 3px solid #7fc6a4;
   margin: 2vh 0;
+}
+.text-border-bottom {
+  position: relative;
+  max-width: 150px;
+  border-bottom: 3px solid #7fc6a4;
+  margin: 2vh auto !important;
 }
 #comitment {
   .card {
@@ -252,6 +269,9 @@
 #services {
   background-color: #ecf0f3;
   margin-top: 10vh;
+  .elementor-shape-fill {
+    fill: white !important;
+  }
   .subtitle {
     font-size: 20px;
     color: rgb(19, 19, 19);
@@ -273,6 +293,137 @@
     margin-top: 10px;
   }
 }
-.elementor-shape-fill {
-  fill: white !important;
+#infographic {
+  padding: 30px 0px;
+  background-color: #ecf0f3;
+  .info {
+    position: relative;
+    padding: 30px;
+
+    .sub-info {
+      display: block;
+      color: #7a7a7ac2;
+      font-size: 14px;
+    }
+    .border-right {
+      border-right: 3px solid #000000;
+      padding-bottom: 60px;
+
+      margin-top: 8px;
+      right: 20px;
+      position: absolute;
+    }
+    .border-left {
+      border-left: 3px solid #000000;
+      padding-bottom: 60px;
+      margin-left: -10px;
+      margin-top: 8px;
+      position: absolute;
+    }
+  }
+}
+#categories {
+  padding: 50px 10px;
+
+  .card {
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #ecf0f3;
+    box-shadow: 0px 0px 30px #00000060;
+    img {
+      border-radius: 20px 20px 0px 0px;
+      max-width: 290px;
+      max-height: 300px;
+    }
+    .card-list {
+      color: #8587a9;
+      padding: 0 auto;
+    }
+  }
+}
+#contact-us {
+  background-image: url("../images/contact-us-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 20px 0;
+  .container {
+    padding: 100px 25px;
+    .heading {
+      color: white;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .btn-contact {
+      background-color: #7fc6a4;
+      color: white;
+      border-radius: 0;
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  }
+}
+#projects {
+  padding: 30px 0px;
+  .title {
+    font-size: 18px;
+  }
+  .heading {
+    margin: 30px 0;
+  }
+  .project-img {
+    width: 100%;
+    margin: 50px 0;
+  }
+}
+#footer {
+  background-color: #04131e;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  .logo {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 30px;
+  }
+  .slogan {
+    color: #c5c5c5;
+    font-weight: 600;
+  }
+  .social-links {
+    .social-link {
+      padding: 10px;
+    }
+    a {
+      color: white !important;
+      &:hover {
+        color: #7fc6a4 !important;
+        transition: 0.6s;
+      }
+    }
+  }
+  .text-border-bottom {
+    position: relative;
+    max-width: 120px;
+    border-bottom: 3px solid #7fc6a4;
+    margin: 2vh 0 !important;
+  }
+  a {
+    color: white;
+  }
+  .icon {
+    padding-right: 10px;
+    color: #7fc6a4;
+  }
+  .call {
+    background-color: #0b2b43;
+    padding: 20px;
+    max-width: 15rem;
+  }
+  .footer-bottom {
+    color: rgb(185, 185, 185);
+    padding: 20px 10px;
+    margin-top: 20px;
+    border-top: 1px solid #616161;
+  }
 }
