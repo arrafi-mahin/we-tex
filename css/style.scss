@@ -1,8 +1,13 @@
+// Color variable
+$primary-color: #0b3143;
+$secondary-color: #7fc6a4;
+// fonts
 @font-face {
-  font-family: "Lato", sans-serif;
-  font-family: "Roboto", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 }
+// Media Query
 @media (max-width: 768px) {
   .swiper-container {
     height: 60vh !important;
@@ -24,13 +29,15 @@
     margin-left: 10px !important;
   }
 }
+
+// style
 #header {
   padding: 0 !important;
   #topBar {
-    background-color: #0b2b43;
+    background-color: $primary-color;
     color: white;
     font-size: 14px;
-    font-family: "Roboto";
+    font-family: "Open Sans" "sans-serif";
     font-weight: 700;
     i {
       padding: 0 10px;
@@ -42,7 +49,7 @@
       background-color: white;
       padding: 12px 15px;
       i {
-        color: #0b2b43;
+        color: $primary-color;
       }
     }
     .social-link {
@@ -59,7 +66,7 @@
     }
   }
   .navbar {
-    font-family: "Roboto";
+    font-family: "Montserrat";
     .navbar-brand {
       .brand-title {
         font-size: 30px;
@@ -69,19 +76,27 @@
     }
     .nav-item {
       padding: 0 15px;
-      font-weight: 600;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      &:hover {
+        .nav-link {
+          color: $secondary-color;
+        }
+      }
     }
   }
+
   .btn-nav {
-    background-color: #0b2b43;
+    background-color: $primary-color;
     color: white;
     padding: 16px 25px;
     margin: 10px;
     border-radius: 0;
     &:hover {
       background-color: white;
-      color: #0b2b43;
-      border: 1px solid #0b2b43;
+      color: $primary-color;
+      border: 1px solid $primary-color;
       transition: 0.4s !important;
     }
   }
@@ -112,6 +127,7 @@
       text-shadow: 0px 0px 5px rgba(63, 107, 169, 0.5);
     }
     .title {
+      font-family: "Open Sans", sans-serif;
       color: white;
       margin: 5px 0;
       text-shadow: 0px 0px 5px rgba(63, 107, 169, 0.5);
@@ -135,7 +151,7 @@
       text-shadow: 0px 0px 5px rgba(63, 107, 169, 0.5);
     }
     .text-important {
-      color: #7fc6a4;
+      color: $secondary-color;
     }
   }
   .text-row {
@@ -150,9 +166,10 @@
   }
   i {
     font-size: 50px;
-    color: #7fc6a4;
+    color: $secondary-color;
   }
   .info-text {
+    font-family: "Open Sans", sans-serif;
     padding-left: 25px;
     .heading {
       margin-bottom: 20px;
@@ -162,6 +179,7 @@
     }
   }
   .card {
+    font-family: "Open Sans", sans-serif;
     width: 260px;
     padding: 20px;
     color: white;
@@ -172,10 +190,10 @@
     box-shadow: 0px 0px 2px #0b2b435e;
   }
   .card-1 {
-    background-color: #0b2b43;
+    background-color: $primary-color;
   }
   .card-2 {
-    background-color: #7fc6a4;
+    background-color: $secondary-color;
     .count {
       font-size: 70px;
       font-weight: 700;
@@ -205,10 +223,13 @@
     margin-bottom: 10px;
   }
   .heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     margin: 20px 0;
-    color: #0b2b43;
+    color: $primary-color;
   }
   .about-des {
+    font-family: "Open Sans", sans-serif;
     color: #616161;
     padding: 0;
     text-align: justify;
@@ -217,16 +238,25 @@
 .text-border {
   position: relative;
   max-width: 120px;
-  border-bottom: 3px solid #7fc6a4;
+  border-bottom: 3px solid $secondary-color;
   margin: 2vh 0;
 }
 .text-border-bottom {
   position: relative;
   max-width: 150px;
-  border-bottom: 3px solid #7fc6a4;
+  border-bottom: 3px solid $secondary-color;
   margin: 2vh auto !important;
 }
 #comitment {
+  .heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: $primary-color;
+    font-size: 30px;
+  }
+  .desc {
+    color: #616161;
+  }
   .card {
     border: none;
     max-width: 334px;
@@ -246,7 +276,7 @@
       padding: 10px 15px;
       border: 5px solid white;
       position: absolute;
-      background-color: #7fc6a4;
+      background-color: $secondary-color;
       border-radius: 60px;
       top: 88%;
       left: 40%;
@@ -254,6 +284,9 @@
     .card-title {
       font-size: 25px;
       // font-weight: 600;
+    }
+    .card-text {
+      color: #616161;
     }
     &:hover {
       box-shadow: 0px 0px 10px #38383852;
@@ -287,7 +320,7 @@
   }
   .btn-services {
     color: white;
-    background-color: #7fc6a4;
+    background-color: $secondary-color;
     border: 1px solid white;
     padding: 5px 20px;
     margin-top: 10px;
@@ -342,6 +375,35 @@
     }
   }
 }
+#categories-demo {
+  padding: 30px 0;
+  .p-card {
+    position: relative;
+    max-width: 430px;
+    max-height: 250px;
+    padding: 0;
+    margin: 4px;
+    border: 5px solid white;
+    box-shadow: 0 0 5px #00000025;
+    .card-text {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      background-color: white;
+      opacity: 0;
+    }
+    &:hover {
+      .card-text {
+        opacity: 1;
+        padding: 30px 0;
+        transition: 0.6s;
+        font-size: 20px;
+      }
+    }
+  }
+}
 #contact-us {
   background-image: url("../images/contact-us-bg.jpg");
   background-repeat: no-repeat;
@@ -356,7 +418,7 @@
       margin-bottom: 20px;
     }
     .btn-contact {
-      background-color: #7fc6a4;
+      background-color: $secondary-color;
       color: white;
       border-radius: 0;
       padding: 10px 20px;
@@ -378,7 +440,7 @@
   }
 }
 #footer {
-  background-color: #04131e;
+  background-color: $primary-color;
   padding-top: 80px;
   padding-bottom: 40px;
   .logo {
@@ -397,7 +459,7 @@
     a {
       color: white !important;
       &:hover {
-        color: #7fc6a4 !important;
+        color: $secondary-color !important;
         transition: 0.6s;
       }
     }
@@ -405,7 +467,7 @@
   .text-border-bottom {
     position: relative;
     max-width: 120px;
-    border-bottom: 3px solid #7fc6a4;
+    border-bottom: 3px solid $secondary-color;
     margin: 2vh 0 !important;
   }
   a {
@@ -413,10 +475,10 @@
   }
   .icon {
     padding-right: 10px;
-    color: #7fc6a4;
+    color: $secondary-color;
   }
   .call {
-    background-color: #0b2b43;
+    background-color: $primary-color;
     padding: 20px;
     max-width: 15rem;
   }
@@ -425,5 +487,22 @@
     padding: 20px 10px;
     margin-top: 20px;
     border-top: 1px solid #616161;
+  }
+}
+// float button
+.float-button {
+  text-decoration: none;
+  position: fixed;
+  z-index: 10;
+  right: 20px;
+  display: flex;
+  bottom: 20px;
+  background-color: $secondary-color;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px #00000025;
+  &:hover {
+    color: white;
   }
 }

@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Lato", sans-serif;
-  font-family: "Roboto", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 }
 
 @media (max-width: 768px) {
@@ -32,10 +32,10 @@
 }
 
 #header #topBar {
-  background-color: #0b2b43;
+  background-color: #0b3143;
   color: white;
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: "Open Sans" "sans-serif";
   font-weight: 700;
 }
 
@@ -53,7 +53,7 @@
 }
 
 #header #topBar .social-links i {
-  color: #0b2b43;
+  color: #0b3143;
 }
 
 #header #topBar .social-link:hover i {
@@ -69,7 +69,7 @@
 }
 
 #header .navbar {
-  font-family: "Roboto";
+  font-family: "Montserrat";
 }
 
 #header .navbar .navbar-brand .brand-title {
@@ -80,11 +80,17 @@
 
 #header .navbar .nav-item {
   padding: 0 15px;
-  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#header .navbar .nav-item:hover .nav-link {
+  color: #7fc6a4;
 }
 
 #header .btn-nav {
-  background-color: #0b2b43;
+  background-color: #0b3143;
   color: white;
   padding: 16px 25px;
   margin: 10px;
@@ -93,8 +99,8 @@
 
 #header .btn-nav:hover {
   background-color: white;
-  color: #0b2b43;
-  border: 1px solid #0b2b43;
+  color: #0b3143;
+  border: 1px solid #0b3143;
   -webkit-transition: 0.4s !important;
   transition: 0.4s !important;
 }
@@ -130,6 +136,7 @@
 }
 
 #slider .slider-text .title {
+  font-family: "Open Sans", sans-serif;
   color: white;
   margin: 5px 0;
   text-shadow: 0px 0px 5px rgba(63, 107, 169, 0.5);
@@ -179,6 +186,7 @@
 }
 
 #location .info-text {
+  font-family: "Open Sans", sans-serif;
   padding-left: 25px;
 }
 
@@ -191,6 +199,7 @@
 }
 
 #location .card {
+  font-family: "Open Sans", sans-serif;
   width: 260px;
   padding: 20px;
   color: white;
@@ -203,7 +212,7 @@
 }
 
 #location .card-1 {
-  background-color: #0b2b43;
+  background-color: #0b3143;
 }
 
 #location .card-2 {
@@ -243,11 +252,14 @@
 }
 
 #about-us .heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   margin: 20px 0;
-  color: #0b2b43;
+  color: #0b3143;
 }
 
 #about-us .about-des {
+  font-family: "Open Sans", sans-serif;
   color: #616161;
   padding: 0;
   text-align: justify;
@@ -265,6 +277,17 @@
   max-width: 150px;
   border-bottom: 3px solid #7fc6a4;
   margin: 2vh auto !important;
+}
+
+#comitment .heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #0b3143;
+  font-size: 30px;
+}
+
+#comitment .desc {
+  color: #616161;
 }
 
 #comitment .card {
@@ -300,6 +323,10 @@
 
 #comitment .card .card-title {
   font-size: 25px;
+}
+
+#comitment .card .card-text {
+  color: #616161;
 }
 
 #comitment .card:hover {
@@ -404,6 +431,39 @@
   padding: 0 auto;
 }
 
+#categories-demo {
+  padding: 30px 0;
+}
+
+#categories-demo .p-card {
+  position: relative;
+  max-width: 430px;
+  max-height: 250px;
+  padding: 0;
+  margin: 4px;
+  border: 5px solid white;
+  -webkit-box-shadow: 0 0 5px #00000025;
+          box-shadow: 0 0 5px #00000025;
+}
+
+#categories-demo .p-card .card-text {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  background-color: white;
+  opacity: 0;
+}
+
+#categories-demo .p-card:hover .card-text {
+  opacity: 1;
+  padding: 30px 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  font-size: 20px;
+}
+
 #contact-us {
   background-image: url("../images/contact-us-bg.jpg");
   background-repeat: no-repeat;
@@ -448,7 +508,7 @@
 }
 
 #footer {
-  background-color: #04131e;
+  background-color: #0b3143;
   padding-top: 80px;
   padding-bottom: 40px;
 }
@@ -495,7 +555,7 @@
 }
 
 #footer .call {
-  background-color: #0b2b43;
+  background-color: #0b3143;
   padding: 20px;
   max-width: 15rem;
 }
@@ -505,5 +565,26 @@
   padding: 20px 10px;
   margin-top: 20px;
   border-top: 1px solid #616161;
+}
+
+.float-button {
+  text-decoration: none;
+  position: fixed;
+  z-index: 10;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 20px;
+  background-color: #7fc6a4;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 50px;
+  -webkit-box-shadow: 5px 5px 5px #00000025;
+          box-shadow: 5px 5px 5px #00000025;
+}
+
+.float-button:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
