@@ -375,35 +375,7 @@ $secondary-color: #7fc6a4;
     }
   }
 }
-#categories-demo {
-  padding: 30px 0;
-  .p-card {
-    position: relative;
-    max-width: 430px;
-    max-height: 250px;
-    padding: 0;
-    margin: 4px;
-    border: 5px solid white;
-    box-shadow: 0 0 5px #00000025;
-    .card-text {
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 100%;
-      margin: 0;
-      background-color: white;
-      opacity: 0;
-    }
-    &:hover {
-      .card-text {
-        opacity: 1;
-        padding: 30px 0;
-        transition: 0.6s;
-        font-size: 20px;
-      }
-    }
-  }
-}
+
 #contact-us {
   background-image: url("../images/contact-us-bg.jpg");
   background-repeat: no-repeat;
@@ -427,6 +399,8 @@ $secondary-color: #7fc6a4;
   }
 }
 #projects {
+  padding-left: 0;
+  padding-right: 0;
   padding: 30px 0px;
   .title {
     font-size: 18px;
@@ -437,6 +411,133 @@ $secondary-color: #7fc6a4;
   .project-img {
     width: 100%;
     margin: 50px 0;
+  }
+  .cards {
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .p-card {
+    position: relative;
+    max-width: 370px;
+    max-height: 250px;
+    padding: 0;
+    margin: 4px;
+    border: 5px solid white;
+    box-shadow: 0 0 5px #00000025;
+    .card-text {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      background-color: white;
+      opacity: 0;
+    }
+    &:hover {
+      .card-text {
+        opacity: 1;
+        padding: 20px 0;
+        transition: 0.6s;
+        font-size: 20px;
+      }
+    }
+  }
+  .p-card-2 {
+    .p-card {
+      &:hover {
+        .card-text {
+          opacity: 0.9;
+          padding: 100px 0;
+          transition: 0.6s;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+#review {
+  .profile-card-4 {
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    &:hover img {
+      transform: rotate(5deg) scale(1.1, 1.1);
+      filter: brightness(110%);
+    }
+    img {
+      transition: all 0.25s linear;
+    }
+    .profile-content {
+      position: relative;
+      padding: 15px;
+      background-color: #fff;
+      &:before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        top: -10px;
+        left: 0px;
+        right: 0px;
+        background-color: #fff;
+        z-index: 0;
+        transform: skewY(3deg);
+      }
+    }
+    .profile-name {
+      font-weight: bold;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      color: #000000;
+      font-size: 17px;
+      p {
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 1.5px;
+      }
+    }
+    .profile-description {
+      color: #777;
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
+  .swiper {
+    width: 100% !important;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 #footer {
@@ -478,7 +579,7 @@ $secondary-color: #7fc6a4;
     color: $secondary-color;
   }
   .call {
-    background-color: $primary-color;
+    background-color: #095d85;
     padding: 20px;
     max-width: 15rem;
   }
@@ -487,6 +588,13 @@ $secondary-color: #7fc6a4;
     padding: 20px 10px;
     margin-top: 20px;
     border-top: 1px solid #616161;
+  }
+}
+#partners {
+  .partner-img {
+    max-width: 300px;
+    max-height: auto;
+    // width: auto;
   }
 }
 // float button

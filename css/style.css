@@ -431,39 +431,6 @@
   padding: 0 auto;
 }
 
-#categories-demo {
-  padding: 30px 0;
-}
-
-#categories-demo .p-card {
-  position: relative;
-  max-width: 430px;
-  max-height: 250px;
-  padding: 0;
-  margin: 4px;
-  border: 5px solid white;
-  -webkit-box-shadow: 0 0 5px #00000025;
-          box-shadow: 0 0 5px #00000025;
-}
-
-#categories-demo .p-card .card-text {
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  background-color: white;
-  opacity: 0;
-}
-
-#categories-demo .p-card:hover .card-text {
-  opacity: 1;
-  padding: 30px 0;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  font-size: 20px;
-}
-
 #contact-us {
   background-image: url("../images/contact-us-bg.jpg");
   background-repeat: no-repeat;
@@ -491,6 +458,8 @@
 }
 
 #projects {
+  padding-left: 0;
+  padding-right: 0;
   padding: 30px 0px;
 }
 
@@ -505,6 +474,142 @@
 #projects .project-img {
   width: 100%;
   margin: 50px 0;
+}
+
+#projects .cards {
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#projects .p-card {
+  position: relative;
+  max-width: 370px;
+  max-height: 250px;
+  padding: 0;
+  margin: 4px;
+  border: 5px solid white;
+  -webkit-box-shadow: 0 0 5px #00000025;
+          box-shadow: 0 0 5px #00000025;
+}
+
+#projects .p-card .card-text {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  background-color: white;
+  opacity: 0;
+}
+
+#projects .p-card:hover .card-text {
+  opacity: 1;
+  padding: 20px 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  font-size: 20px;
+}
+
+#projects .p-card-2 .p-card:hover .card-text {
+  opacity: 0.9;
+  padding: 100px 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  font-size: 20px;
+}
+
+#review .profile-card-4 {
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+#review .profile-card-4:hover img {
+  -webkit-transform: rotate(5deg) scale(1.1, 1.1);
+          transform: rotate(5deg) scale(1.1, 1.1);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+#review .profile-card-4 img {
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+#review .profile-card-4 .profile-content {
+  position: relative;
+  padding: 15px;
+  background-color: #fff;
+}
+
+#review .profile-card-4 .profile-content:before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  top: -10px;
+  left: 0px;
+  right: 0px;
+  background-color: #fff;
+  z-index: 0;
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
+}
+
+#review .profile-card-4 .profile-name {
+  font-weight: bold;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  color: #000000;
+  font-size: 17px;
+}
+
+#review .profile-card-4 .profile-name p {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+#review .profile-card-4 .profile-description {
+  color: #777;
+  font-size: 12px;
+  padding: 10px;
+}
+
+#review .swiper {
+  width: 100% !important;
+  height: 100%;
+}
+
+#review .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#review .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #footer {
@@ -555,7 +660,7 @@
 }
 
 #footer .call {
-  background-color: #0b3143;
+  background-color: #095d85;
   padding: 20px;
   max-width: 15rem;
 }
@@ -565,6 +670,11 @@
   padding: 20px 10px;
   margin-top: 20px;
   border-top: 1px solid #616161;
+}
+
+#partners .partner-img {
+  max-width: 300px;
+  max-height: auto;
 }
 
 .float-button {
