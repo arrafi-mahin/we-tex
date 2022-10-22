@@ -462,7 +462,7 @@
           <div class="col-md-4 col-sm-12 text-center animate-scale align-self-center">
             <img class="img-fluid" src="./images/infographic.webp" alt="">
           </div>
-          <div class="col-md-4 col-sm-12 animate-bottom text-end">
+          <div class="col-md-4 col-sm-12 animate-top text-end">
             <div class="info">
               <div class="border-right"></div>
               <h3 class="heading">SOURCING</h3>
@@ -620,7 +620,6 @@
       </div>
     </section>
     <!-- Categories End -->
-    
     <!-- Contact us -->
     <section id="contact-us">
       <div class="container ">
@@ -634,9 +633,9 @@
     <!-- Project start -->
     <section id="projects">
       <div class="container">
-        <p class="title text-center animate-right">Our Projects</p>
+        <h2 class="heading text-center animate-right">Our Projects</h2>
         <div class="text-border-bottom text-center animate-left"></div>
-        <h2 class="heading text-center animate-scale">Understanding our capabilities in apparel</h2>
+        <h2 class="title text-center animate-scale">Understanding our capabilities in apparel</h2>
         <p class="subtitle text-center animate-scale">We have built reliable relationships with state of the art, innovative & forward thinking manufactures in Bangladesh.<br>
           Allowing us to source quality commodities in certified factories that adhere to the highest levels of social compliance and sustainability requirements.
           </p>
@@ -670,46 +669,13 @@
             </div>
           </div>
         </div>
-        <!-- Gallery -->
-        <h2 class="heading text-center animate-top">Understanding our capabilities in home decor</h2>
-        <div class="text-border-bottom text-center animate-bottom"></div>
-        <!-- Gallery 2 -->
-        <div class="row py-4">
-          <div class="cards p-card-2 d-flex flex-wrap justify-content-center overflow-hidden">
-            <div class="p-card animate-bottom">
-              <img class="img-fluid" src="https://source.unsplash.com/random/430x259" alt="">
-              <p class="card-text text-center">Hello world</p>
-            </div>
-            <div class="p-card animate-bottom">
-              <img class="img-fluid" src="https://source.unsplash.com/random/430x252" alt="">
-              <p class="card-text text-center">Hello world</p>
-            </div>
-            <div class="p-card animate-bottom">
-              <img class="img-fluid" src="https://source.unsplash.com/random/430x248" alt="">
-              <p class="card-text text-center">Hello world</p>
-            </div>
-            <div class="p-card animate-bottom">
-              <img class="img-fluid" src="https://source.unsplash.com/random/432x252" alt="">
-              <p class="card-text text-center">Hello world</p>
-            </div>
-            <div class="p-card animate-bottom">
-              <img class="img-fluid" src="https://source.unsplash.com/random/433x253" alt="">
-              <p class="card-text text-center">Hello world</p>
-            </div>
-            <div class="p-card animate-bottom">
-              <img class="img-fluid" src="https://source.unsplash.com/random/434x254" alt="">
-              <p class="card-text text-center">Hello world</p>
-            </div>
-          </div>
-        </div>
-        <!-- Gallery 2 -->
       </div>
     </section>
     <!-- Project end -->
     <!-- Client Review -->
     <section id="review">
       <div class="container  py-4">
-        <h2 class="heading text-center animate-scale">Client's Say</h2>
+        <h2 class="heading text-center animate-scale">Clients Word</h2>
         <div class="text-border-bottom text-center animate-bottom"></div>
         <div class="row py-4">
           <div class="swiper">
@@ -918,7 +884,7 @@
     <script>
       let swiper = new Swiper(".mySwiper", {
         autoplay: {
-          delay: 3000,
+          delay: 6000,
         },
         effect: 'fade',
         loop: true,
@@ -935,6 +901,9 @@
     var review = new Swiper(".myReview", {
     slidesPerView: 3,
     spaceBetween: 20,
+    autoplay: {
+          delay: 1000,
+        },
     breakpoints: {
     640: {
       slidesPerView: 1,
